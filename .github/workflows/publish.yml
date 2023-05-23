@@ -35,7 +35,7 @@ jobs:
 
       - name: Update version in pom.xml
         run: | 
-          sed -i -e 's#<version>.*</version>#<version>${{ github.event.client_payload.version }}</version>#' ./pom.xml
+          sed -i '1,/<version>/ s/<version>.*<\/version>/<version>${{ github.event.client_payload.version }}<\/version>/g' ./pom.xml
 
       - name: Commit files
         run: |
