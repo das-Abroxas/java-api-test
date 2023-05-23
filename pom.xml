@@ -6,7 +6,7 @@
     
     <groupId>com.github.das-Abroxas</groupId>
     <artifactId>java-api-test</artifactId>
-    <version>1.7.0</version>
+    <version>1.8.0</version>
     <packaging>jar</packaging>
 
     <name>AOS Java API</name>
